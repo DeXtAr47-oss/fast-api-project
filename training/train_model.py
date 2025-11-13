@@ -8,7 +8,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import root_mean_squared_error, mean_absolute_error
-from .train_utils import DATA_FILE_PATH, MODEL_DIR, MODEL_PATH
+from .train_utils import *
 
 df = (pd
       .read_csv(DATA_FILE_PATH)
