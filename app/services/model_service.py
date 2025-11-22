@@ -4,7 +4,7 @@ import pandas as pd
 from ..core.config import Settings
 from ..cache.redis_cache import *
 
-model = joblib.laod(Settings.MODEL_PATH)
+model = joblib.load(Settings.MODEL_PATH)
 
 def predict_car_price(data: dict):
     cached_key = ' '.join([str(val) for val in data.values()])

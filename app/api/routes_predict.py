@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 
 from ..core.dependencies import get_api_key, get_current_user
-from ..services import *
+from app.services.model_service import predict_car_price
 
 router = APIRouter()
 
